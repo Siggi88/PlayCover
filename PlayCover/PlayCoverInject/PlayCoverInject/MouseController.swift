@@ -34,6 +34,14 @@ class MouseController{
                     MouseEmitter.shared.update(deltaX: CGFloat(deltaX), deltaY: CGFloat(deltaY))
                 }
             }
+//            mouse.mouseInput?.leftButton.pressedChangedHandler = {
+//                (mouse, delta, pressed) in
+//                if pressed {
+//                    MouseController.macClick(pressed: true)
+//                } else{
+//                    MouseController.macClick(pressed: false)
+//                }
+//            }
         }
     }
     

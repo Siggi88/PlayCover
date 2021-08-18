@@ -44,7 +44,7 @@ struct AppInstallView: View {
     
     var body: some View {
             VStack{
-                Text("PlayCoverlion 0.5.33 + 0.0.77: You can (not) fix")
+                Text("PlayCover 0.6.0b5")
                     .fontWeight(.bold)
                     .font(.system(.largeTitle, design: .rounded)).padding().frame(minHeight: 150)
                 VStack {
@@ -79,14 +79,17 @@ struct AppInstallView: View {
                                 return false
                             }
                         }.padding()
-                        Spacer()
-                        InstallSettings().environmentObject(installData)
-                        Spacer()
-                        Button("Add new app"){
+                        Button("Add .ipa"){
                             selectFile()
                         }.alert(isPresented: $showWrongfileTypeAlert) {
                             Alert(title: Text("Wrong file type"), message: Text("You should use .ipa file"), dismissButton: .default(Text("OK")))
                         }
+                        InstallSettings().environmentObject(installData)
+                        Text("Advanced settings")
+                            .fontWeight(.bold)
+                            .font(.system(.callout, design: .rounded))
+                        AdvancedInstallSettings().environmentObject(installData)
+                        Spacer()
                         Button("Download app"){
                             flow.showAppsDownloadView = true
                         }.popover(isPresented: $flow.showAppsDownloadView) {
@@ -107,7 +110,7 @@ struct AppInstallView: View {
                 LogView()
                     .environmentObject(InstallAppViewModel.shared)
                     .environmentObject(Logger.shared)
-            }.padding().frame(minWidth: 700).alert(isPresented: error.showError) {
+            }.padding().frame(minWidth: 600, idealHeight: 700).alert(isPresented: error.showError) {
                 Alert(title: Text("Error!"), message: Text(error.error), dismissButton: .default(Text("OK")){
                     error.error = ""
                 })
@@ -137,6 +140,23 @@ struct LogView : View {
 struct InstallSettings : View {
     @EnvironmentObject var installData: InstallAppViewModel
     
+    @State private var toggle: Bool = ProcessInfo.processInfo.isM1()
+    
+    var body: some View {
+            ZStack(alignment: .leading){
+                Rectangle().frame(width: 320.0, height: 50.0).foregroundColor(Color(NSColor.windowBackgroundColor))
+                                .cornerRadius(16).padding()
+                VStack(alignment: .leading){
+                    Toggle("Fullscreen & Keymapping", isOn: $installData.makeFullscreen).frame(alignment: .leading)
+                    Toggle("Fix login in games", isOn: $installData.fixLogin).frame(alignment: .leading)
+                }.padding(.init(top: 0, leading: 20, bottom: 0, trailing: 0))
+            }
+    }
+}
+
+struct AdvancedInstallSettings : View {
+    @EnvironmentObject var installData: InstallAppViewModel
+    
     @State private var toggle: Bool = true
     
     var body: some View {
@@ -144,11 +164,8 @@ struct InstallSettings : View {
                 Rectangle().frame(width: 320.0, height: 100.0).foregroundColor(Color(NSColor.windowBackgroundColor))
                                 .cornerRadius(16).padding()
                 VStack(alignment: .leading){
-                    Toggle("Fullscreen & Keymapping", isOn: $installData.makeFullscreen).frame(alignment: .leading)
                     Toggle("Alternative convert method", isOn: $installData.useAlternativePatch).frame(alignment: .leading)
                     Toggle("Alternative decrypt method", isOn: $installData.useAlternativeDecrypt).frame(alignment: .leading)
-                    Toggle("Genshin NSWF 18+ Mod", isOn: $toggle).frame(alignment: .leading)
-                    Toggle("Fix login in games", isOn: $installData.fixLogin).frame(alignment: .leading)
                     Toggle("Clear app cache", isOn: $installData.clearAppCaches).frame(alignment: .leading)
                     Toggle("Export for iOS, Mac (Sideloadly, AltStore)", isOn: $installData.exportForSideloadly).frame(alignment: .leading)
                 }.padding(.init(top: 0, leading: 20, bottom: 0, trailing: 0))

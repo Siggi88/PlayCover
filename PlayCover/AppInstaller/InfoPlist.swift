@@ -15,7 +15,7 @@ class InfoPlist {
     }
     
     func bundleName() throws -> String {
-        var name = try plistValue(key: "CFBundleName")
+        var name = try plistValue(key: "CFBundleDisplayName")
         if name == "" {
             name = try plistValue(key: "CFBundleDisplayName")
         }

@@ -46,18 +46,20 @@ extension UIViewController {
             let textField4 = alert.textFields![3] as UITextField
             
             var width = Int(textField3.text!) ?? Int(Values.screenWidth)
-            if width < 100 || width > 4000 {
+            if width < 100 || width > 4500 {
                 width = Int(Values.screenWidth)
             }
             
             var height = Int(textField4.text!) ?? Int(Values.screenHeight)
-            if width < 100 || width > 4000 {
+            if height < 100 || height > 4500 {
                 width = Int(Values.screenHeight)
             }
             
             setScreenValues(shiftX: Int(textField.text!) ?? 0, shiftY: Int(textField2.text!) ?? 0, width: width, height: height)
             
             InputController.initUI()
+            
+            Dynamic.NSCursor.hide()
         }
         
         alert.addTextField { (textField) in
@@ -88,6 +90,8 @@ extension UIViewController {
         let cancel = UIAlertAction(title: "Cancel", style: .default) { (alertAction) in }
         alert.addAction(cancel)
         
+        MouseEmitter.setActive(false)
+        Dynamic.NSCursor.unhide()
         self.present(alert, animated:true, completion: nil)
         
     }

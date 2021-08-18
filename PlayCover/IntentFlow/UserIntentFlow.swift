@@ -15,6 +15,7 @@ class UserIntentFlow: ObservableObject {
     
     @Published var showAppsDownloadView : Bool = false
     @Published var showTroubleshootView : Bool = false
+    @Published var canUseApp : Bool = ProcessInfo.processInfo.isM1()
     
     required init() {}
 

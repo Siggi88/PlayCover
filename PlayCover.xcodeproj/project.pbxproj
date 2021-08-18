@@ -13,6 +13,7 @@
 		5321F48C26C2E978000CF2FA /* PlayCoverInject in Resources */ = {isa = PBXBuildFile; fileRef = 5321F48B26C2E978000CF2FA /* PlayCoverInject */; };
 		532A0A6326C02440008DFFDF /* appdecrypt in Resources */ = {isa = PBXBuildFile; fileRef = 532A0A6026C02440008DFFDF /* appdecrypt */; };
 		533F664826C06A460051CB3E /* AppsDownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533F664726C06A460051CB3E /* AppsDownloadView.swift */; };
+		538AAE7B26CD41E60009C7AC /* ProcessExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538AAE7A26CD41E60009C7AC /* ProcessExtension.swift */; };
 		53D9DAF326C1849D0071959E /* PlayCoverError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9DAF226C1849D0071959E /* PlayCoverError.swift */; };
 		53D9DAF726C184B40071959E /* InfoPlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9DAF626C184B40071959E /* InfoPlist.swift */; };
 		53D9DAF926C186DE0071959E /* InstallAppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9DAF826C186DE0071959E /* InstallAppViewModel.swift */; };
@@ -62,6 +63,7 @@
 		5321F48B26C2E978000CF2FA /* PlayCoverInject */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = PlayCoverInject; path = "../../Library/Developer/Xcode/DerivedData/PlayCover-edlgafudzghgghgwqdbihtslptmc/Build/Products/Release-iphoneos/PlayCoverInject.framework/PlayCoverInject"; sourceTree = "<group>"; };
 		532A0A6026C02440008DFFDF /* appdecrypt */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = appdecrypt; sourceTree = "<group>"; };
 		533F664726C06A460051CB3E /* AppsDownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsDownloadView.swift; sourceTree = "<group>"; };
+		538AAE7A26CD41E60009C7AC /* ProcessExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessExtension.swift; sourceTree = "<group>"; };
 		53D9DAF226C1849D0071959E /* PlayCoverError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayCoverError.swift; sourceTree = "<group>"; };
 		53D9DAF626C184B40071959E /* InfoPlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPlist.swift; sourceTree = "<group>"; };
 		53D9DAF826C186DE0071959E /* InstallAppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallAppViewModel.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				53F5E74226C1D37E005AED1D /* FileExtensions.swift */,
 				5314D1ED26C402EC00A0A727 /* Shell.swift */,
 				53F4D2A326C442A00020167C /* ThirdPartyUtils.swift */,
+				538AAE7A26CD41E60009C7AC /* ProcessExtension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				8783CFFB26B8C52D00171041 /* PlayCoverApp.swift in Sources */,
 				5314D1EE26C402EC00A0A727 /* Shell.swift in Sources */,
 				8783D00B26B8C9E600171041 /* URLExtensions.swift in Sources */,
+				538AAE7B26CD41E60009C7AC /* ProcessExtension.swift in Sources */,
 				53D9DAF326C1849D0071959E /* PlayCoverError.swift in Sources */,
 				53F4D2A426C442A00020167C /* ThirdPartyUtils.swift in Sources */,
 			);

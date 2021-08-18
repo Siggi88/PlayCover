@@ -32,6 +32,7 @@ class OverlayController {
             saveButtons()
             InputController.updateControls()
         } else{
+            MouseEmitter.shared.setActive(active: false)
             Dynamic.NSCursor.unhide()
             overlayView.isUserInteractionEnabled = true
             InputController.window()?.addSubview(overlayView)

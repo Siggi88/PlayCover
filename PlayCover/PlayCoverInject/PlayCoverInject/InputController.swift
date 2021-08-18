@@ -28,13 +28,13 @@ extension UIWindow {
       
         @objc static public func initUI(){
             if #available(macOS 11, *) {
-                if let vals = root()?.getScreenValues(){
-                    screenWidth = CGFloat(vals[2]) * 1.3
-                    screenHeight = CGFloat(vals[3]) * 1.3
-                    window()?.frame = CGRect(x: CGFloat(vals[0]), y: CGFloat(vals[1]), width: screenWidth + CGFloat(vals[0]), height: screenHeight + CGFloat(vals[0]))
-                } else{
-                    window()?.frame = CGRect(x: 0, y: 0, width: screenWidth + CGFloat(0), height: screenHeight + CGFloat(0))
-                }
+//                if let vals = root()?.getScreenValues(){
+//                    screenWidth = CGFloat(vals[2]) * 1.3
+//                    screenHeight = CGFloat(vals[3]) * 1.3
+//                    window()?.frame = CGRect(x: CGFloat(vals[0]), y: CGFloat(vals[1]), width: screenWidth + CGFloat(vals[0]), height: screenHeight + CGFloat(vals[0]))
+//                } else{
+//                    window()?.frame = CGRect(x: 0, y: 0, width: screenWidth + CGFloat(0), height: screenHeight + CGFloat(0))
+//                }
                 
             }
             root()?.setup()
