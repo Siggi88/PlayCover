@@ -15,7 +15,9 @@ class ErrorViewModel: ObservableObject {
     @Published var error : String = ""
     
     var showError : Binding<Bool> { Binding (
-        get: { !self.error.isEmpty },
+        get: {
+            !self.error.isEmpty
+        },
         set: { if !$0 { self.error = "" } }
         )
     }

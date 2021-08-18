@@ -36,13 +36,11 @@ class BinaryPatcher {
         }
     }
     
-    func decryptMachos(_ app: URL, installed : String, exec : URL) throws {
-        for macho in extracted {
-                let src = URL(fileURLWithPath: installed.appending(macho))
-                let target = URL(fileURLWithPath: app.path.appending(macho))
-                try fm.delete(at: target)
-                sh.appdecrypt(src, target: target)
-        }
+    func decryptMachos(_ target: URL, installed : URL, name : String, app : URL) throws {
+        try fm.delete(at: target)
+        sh.appdecrypt(installed, target: target)
+        try fm.delete(at: app)
+        try fm.moveItem(at: target.appendingPathComponent("Wrapper").appendingPathComponent("\(name).app"), to: app.deletingLastPathComponent().appendingPathComponent("\(name).app"))
     }
     
     private static func isMacho(fileUrl : URL) -> Bool {

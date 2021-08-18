@@ -18,7 +18,11 @@ class ThirdPartyUtils {
     }()
     
     static var crypt : URL = {
-        return ThirdPartyUtils.bundleUtil("appdecrypt")
+        let macho = ThirdPartyUtils.bundleUtil("appdecrypt")
+        if !sh.isMachoSigned(macho){
+            sh.codesign(macho)
+        }
+        return macho
     }()
     
     private static func bundleUtil(_ utilName : String) -> URL{

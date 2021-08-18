@@ -35,11 +35,20 @@ extension URL {
     }
     
     func showInFinder() {
-        if self.isDirectory {
-            NSWorkspace.shared.selectFile(nil, inFileViewerRootedAtPath: self.path)
-        }
-        else {
-            showInFinderAndSelectLastComponent(of: self)
+        do {
+            if self.isDirectory {
+                if NSWorkspace.shared.selectFile(nil, inFileViewerRootedAtPath: self.path){
+                    ulog("App was successfully launched!")
+                } else{
+                    ulog("PlayCover setup for 'Fix login' is wrong! Please, perform all instructions in 'Troubleshoot'!")
+                    throw PlayCoverError.improperSetup
+                }
+            }
+            else {
+                showInFinderAndSelectLastComponent(of: self)
+            }
+        } catch {
+            evm.error = error.localizedDescription
         }
     }
 

@@ -46,7 +46,7 @@ struct AppInstallView: View {
             VStack{
                 Text("PlayCover 0.6.0b5")
                     .fontWeight(.bold)
-                    .font(.system(.largeTitle, design: .rounded)).padding().frame(minHeight: 150)
+                    .font(.system(.largeTitle, design: .rounded)).padding().frame(minHeight: 50)
                 VStack {
                     if !isLoading {
                         ZStack {
@@ -89,7 +89,6 @@ struct AppInstallView: View {
                             .fontWeight(.bold)
                             .font(.system(.callout, design: .rounded))
                         AdvancedInstallSettings().environmentObject(installData)
-                        Spacer()
                         Button("Download app"){
                             flow.showAppsDownloadView = true
                         }.popover(isPresented: $flow.showAppsDownloadView) {
@@ -100,17 +99,15 @@ struct AppInstallView: View {
                         }.popover(isPresented: $flow.showTroubleshootView) {
                             TroubleshootView()
                         }
-                        Spacer().frame(minHeight: 20)
                     } else{
                         ProgressView("Installing...")
                     }
                    
                 }
-                Spacer(minLength: 20)
                 LogView()
                     .environmentObject(InstallAppViewModel.shared)
                     .environmentObject(Logger.shared)
-            }.padding().frame(minWidth: 600, idealHeight: 700).alert(isPresented: error.showError) {
+            }.padding().frame(minWidth: 600).alert(isPresented: error.showError) {
                 Alert(title: Text("Error!"), message: Text(error.error), dismissButton: .default(Text("OK")){
                     error.error = ""
                 })
@@ -132,7 +129,7 @@ struct LogView : View {
                 VStack(alignment: .leading) {
                     Text(logger.logs).padding().lineLimit(nil).frame(alignment: .leading)
                 }
-            }.frame(maxHeight: 200).padding()
+            }.frame(maxHeight: 100).padding()
         }.padding()
     }
 }

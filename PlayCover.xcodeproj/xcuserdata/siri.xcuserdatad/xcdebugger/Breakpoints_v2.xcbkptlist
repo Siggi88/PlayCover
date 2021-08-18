@@ -302,8 +302,8 @@
             filePath = "PlayCover/AppInstaller/AppInstaller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
             landmarkName = "exportIPA(app:bundleName:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -334,8 +334,8 @@
             filePath = "PlayCover/AppInstaller/AppInstaller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "190"
-            endingLineNumber = "190"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
             landmarkName = "exportIPA(app:bundleName:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -350,8 +350,8 @@
             filePath = "PlayCover/AppInstaller/AppInstaller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
             landmarkName = "placeAppToDocs(app:name:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -366,8 +366,8 @@
             filePath = "PlayCover/AppInstaller/AppInstaller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
             landmarkName = "placeAppToDocs(app:name:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -382,8 +382,8 @@
             filePath = "PlayCover/AppInstaller/AppInstaller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
             landmarkName = "placeAppToDocs(app:name:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -414,8 +414,8 @@
             filePath = "PlayCover/AppInstaller/AppInstaller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
             landmarkName = "placeAppToDocs(app:name:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -446,8 +446,8 @@
             filePath = "PlayCover/AppInstaller/AppInstaller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "159"
-            endingLineNumber = "159"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
             landmarkName = "placeAppToDocs(app:name:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -558,8 +558,8 @@
             filePath = "PlayCover/Utils/ThirdPartyUtils.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "bundleUtil(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -574,8 +574,8 @@
             filePath = "PlayCover/Utils/ThirdPartyUtils.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "bundleUtil(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -590,8 +590,8 @@
             filePath = "PlayCover/Utils/Shell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "fetchAppsBy(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -622,89 +622,9 @@
             filePath = "PlayCover/Utils/Shell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "removeQuarantine(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F1651876-CEF8-456A-B02F-905743D1484D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PlayCover/AppInstaller/BinaryPatcher.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "decryptMachos(_:installed:exec:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7E7B5E62-1F33-4BAB-8838-BDD030AE5D09"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PlayCover/AppInstaller/BinaryPatcher.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "decryptMachos(_:installed:exec:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "7E7B5E62-1F33-4BAB-8838-BDD030AE5D09 - 42601399bcd8e4f7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PlayCover.BinaryPatcher.decryptMachos(_: Foundation.URL, installed: Swift.String, exec: Foundation.URL) throws -&gt; ()"
-                  moduleName = "PlayCover"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/siri/Desktop/PlayCover/PlayCover/AppInstaller/BinaryPatcher.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "1530">
-               </Location>
-               <Location
-                  uuid = "7E7B5E62-1F33-4BAB-8838-BDD030AE5D09 - 42601399bcd8e4f7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PlayCover.BinaryPatcher.decryptMachos(_: Foundation.URL, installed: Swift.String, exec: Foundation.URL) throws -&gt; ()"
-                  moduleName = "PlayCover"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/siri/Desktop/PlayCover/PlayCover/AppInstaller/BinaryPatcher.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "1937">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C12FA10E-3338-4CD0-9DE2-9499538794CD"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PlayCover/AppInstaller/BinaryPatcher.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "decryptMachos(_:installed:exec:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -718,8 +638,8 @@
             filePath = "PlayCover/AppInstaller/AppInstaller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
             landmarkName = "unpackAppToAppsDir(app:temp:name:bundleName:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -734,26 +654,10 @@
             filePath = "PlayCover/AppInstaller/AppInstaller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
             landmarkName = "unpackAppToAppsDir(app:temp:name:bundleName:)"
             landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A7DDA09D-9CA8-4F07-8A1C-564EE491AF69"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PlayCover/AppInstaller/BinaryPatcher.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "decryptMachos(_:installed:exec:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -846,8 +750,8 @@
             filePath = "PlayCover/AppInstaller/AppInstaller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
             landmarkName = "decryptApp(app:temp:name:bundleName:exec:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -862,8 +766,8 @@
             filePath = "PlayCover/AppInstaller/AppInstaller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
             landmarkName = "installIPA(origipa:inAppDir:tempApp:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -878,8 +782,8 @@
             filePath = "PlayCover/AppInstaller/AppInstaller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
             landmarkName = "installIPA(origipa:inAppDir:tempApp:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -894,8 +798,8 @@
             filePath = "PlayCover/AppInstaller/AppInstaller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
             landmarkName = "installIPA(origipa:inAppDir:tempApp:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -910,8 +814,8 @@
             filePath = "PlayCover/AppInstaller/AppInstaller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "149"
-            endingLineNumber = "149"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
             landmarkName = "installIPA(origipa:inAppDir:tempApp:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -926,8 +830,8 @@
             filePath = "PlayCover/AppInstaller/AppInstaller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "decryptApp(app:temp:name:bundleName:exec:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -942,8 +846,8 @@
             filePath = "PlayCover/AppInstaller/AppInstaller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "decryptApp(app:temp:name:bundleName:exec:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -992,6 +896,182 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
             endingLineNumber = "30"
+            landmarkName = "installApp(url:returnCompletion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C44FA2DD-B1D7-4297-A1C5-CEE4712FB72A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlayCover/AppInstaller/AppInstaller.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "decryptApp(app:temp:name:bundleName:exec:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E89491CF-F562-4706-9C92-338DD4B59FD7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlayCover/AppInstaller/InfoPlist.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "plistValue(key:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52C96B69-CC48-4D38-85D9-4EF5752DDFD1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlayCover/AppInstaller/InfoPlist.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "bundleName()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EFA8E79E-8AF2-4CA7-BBB4-C9621D7D1779"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlayCover/AppInstaller/InfoPlist.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "bundleName()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EDBF890B-9202-4974-8EA2-BEF37A4B9A1A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlayCover/AppInstaller/InfoPlist.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "bundleName()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AB5F0869-D1ED-465D-ABD0-1388F64474DD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlayCover/AppInstaller/BinaryPatcher.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "decryptMachos(_:installed:name:app:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D4732D2A-BC2B-440B-80C2-A951EA46EB71"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlayCover/AppInstaller/AppInstaller.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "decryptApp(app:temp:name:bundleName:exec:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "72AF89B6-44AE-4815-BDC8-77239BA42B35"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlayCover/AppInstaller/BinaryPatcher.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "decryptMachos(_:installed:name:app:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "38D370FD-426C-4ADF-8EC0-BFD107834A6D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlayCover/AppInstaller/BinaryPatcher.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "decryptMachos(_:installed:name:app:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "764C8638-5DFC-4BD6-B33E-3260728C555A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlayCover/AppInstaller/PlayCoverError.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "errorDescription"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D8BB544E-F3E3-4628-BADF-97E0CEF9304C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlayCover/AppInstaller/AppInstaller.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "installApp(url:returnCompletion:)"
             landmarkType = "7">
          </BreakpointContent>

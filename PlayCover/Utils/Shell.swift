@@ -17,6 +17,10 @@ class Shell {
         return shell("nvram -p").contains("cs_enforcement_disable=1")
     }
     
+    static func isMachoSigned(_ exec : URL) -> Bool {
+        return !shell("codesign -dv \(exec.esc)").contains("code object is not signed at all")
+    }
+    
     static func fetchEntitlements(_ exec : URL) -> String {
         return shell("codesign -d --entitlements :- \(exec.esc)")
     }

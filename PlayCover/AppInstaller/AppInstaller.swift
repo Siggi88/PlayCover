@@ -69,6 +69,12 @@ class AppInstaller {
                 }
                
             } catch {
+                DispatchQueue.main.async {
+                   evm.error = error.localizedDescription
+                }
+                ulog(error.localizedDescription)
+                ulog("Failure!")
+               
                 fm.clearCache()
                 returnCompletion(nil)
             }
@@ -109,7 +115,7 @@ class AppInstaller {
                     try unpackAppToAppsDir(app: app, temp: temp, name: name, bundleName: bundleName)
                 }
                 
-                try BinaryPatcher.shared.decryptMachos(app, installed: "/Applications/\(bundleName).app/Wrapper/\(name).app", exec: exec)
+                try BinaryPatcher.shared.decryptMachos(temp.appendingPathComponent("\(bundleName).app"), installed: URL(fileURLWithPath: "/Applications/\(bundleName).app"), name : name, app: app)
                 
                 if sh.isMachoEncrypted(exec: targetExecFile){
                     ulog("This IPA can't be decrypted on Mac\n")
@@ -118,7 +124,7 @@ class AppInstaller {
                 sh.removeAppFromApps(bundleName)
             }
             
-            func unpackAppToAppsDir(app : URL, temp : URL, name : String, bundleName : String) throws {
+            func unpackAppToAppsDir(app : URL, temp : URL, name : String, bundleName : String) throws -> URL {
                 let finalProduct = temp.appendingPathComponent("\(bundleName).app")
                 try fm.delete(at: finalProduct)
                 ulog("Creating Wrapper folder\n")
@@ -138,6 +144,7 @@ class AppInstaller {
                 )
                 sh.removeQuarantine(finalProduct)
                 sh.moveAppToApps(finalProduct)
+                return finalProduct
             }
             
             func installIPA(origipa: URL, inAppDir: URL, tempApp: URL) throws {
@@ -180,7 +187,6 @@ class AppInstaller {
                     try fm.copyItem(at: macHelper!, to: mh)
                     sh.optoolInstall(library: "MacHelper", exec: exec)
                 }
-                
             }
             
             func exportIPA(app: URL, bundleName : String) throws -> URL {

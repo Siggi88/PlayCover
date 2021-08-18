@@ -12,6 +12,7 @@ enum PlayCoverError: Error {
     case infoPlistNotFound
     case sipDisabled
     case appInstalledNotProperly
+    case improperSetup
 }
 
 extension PlayCoverError: LocalizedError {
@@ -19,29 +20,19 @@ extension PlayCoverError: LocalizedError {
         
         switch self {
         case .cantDecryptIpa:
-            let msg = NSLocalizedString("This .IPA can't be decrypted on this Mac. Download this .ipa from AppDb.to", comment: "")
-            evm.error = msg
-            return msg
+            return NSLocalizedString("This .IPA can't be decrypted on this Mac. Download this .ipa from AppDb.to", comment: "")
         case .infoPlistNotFound:
-            let msg = NSLocalizedString("This .IPA is courrupted. It doesn't contains Info.plist.", comment: "")
-            evm.error = msg
-            return msg
+            return NSLocalizedString("This .IPA is courrupted. It doesn't contains Info.plist.", comment: "")
         case .sipDisabled:
-            let msg = NSLocalizedString("It it impossible to decrypt .IPA with SIP disabled. Please, enable it.", comment: "")
-            evm.error = msg
-            return msg
+            return NSLocalizedString("It it impossible to decrypt .IPA with SIP disabled. Please, enable it.", comment: "")
         case .appInstalledNotProperly:
-            let msg = NSLocalizedString("Please reinstall PlayCoverApp", comment: "")
-            evm.error = msg
-            return msg
+            return NSLocalizedString("Please reinstall PlayCoverApp", comment: "")
         case .cantCreateTemp:
-            let msg = NSLocalizedString("Make sure you don't disallowed PlayCover to access files in Settings - Secuirity & Privacy", comment: "")
-            evm.error = msg
-            return msg
+            return NSLocalizedString("Make sure you don't disallowed PlayCover to access files in Settings - Secuirity & Privacy", comment: "")
         case .ipaCorrupted:
-            let msg = NSLocalizedString("This .IPA is courrupted.Try to use another .ipa", comment: "")
-            evm.error = msg
-            return msg
+            return NSLocalizedString("This .IPA is courrupted.Try to use another .ipa", comment: "")
+        case .improperSetup:
+            return NSLocalizedString("You not performed all instructions! Please, perform all instructions in 'Troubleshoot' or watch video in pinned messages.", comment: "")
         }
     }
 }
