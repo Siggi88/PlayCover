@@ -91,6 +91,10 @@ class Shell {
         ulog(shell("\(utils.crypt.esc) \(src.esc) \(target.esc)"))
     }
     
+    static func machodecrypt(_ src : URL, target: URL) {
+        ulog(shell("\(utils.cryptmacho.esc) \(src.esc) \(target.esc)"))
+    }
+    
     static func removeAppFromApps(_ bundleName : String){
         sudosh(["-S", "/bin/rm", "-r", "-f", "/Applications/\(bundleName.esc).app/"])
     }

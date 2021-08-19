@@ -20,7 +20,7 @@ extension PlayCoverError: LocalizedError {
         
         switch self {
         case .cantDecryptIpa:
-            return NSLocalizedString("This .IPA can't be decrypted on this Mac. Download this .ipa from AppDb.to", comment: "")
+            return NSLocalizedString("This .IPA can't be decrypted on this Mac. Download .ipa from AppDb.to or our Discord. You can also try to use 'Alterntaive decrypt' checkbox", comment: "")
         case .infoPlistNotFound:
             return NSLocalizedString("This .IPA is courrupted. It doesn't contains Info.plist.", comment: "")
         case .sipDisabled:

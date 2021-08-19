@@ -41,6 +41,16 @@ class BinaryPatcher {
         sh.appdecrypt(installed, target: target)
         try fm.delete(at: app)
         try fm.moveItem(at: target.appendingPathComponent("Wrapper").appendingPathComponent("\(name).app"), to: app.deletingLastPathComponent().appendingPathComponent("\(name).app"))
+        for macho in extracted {
+            let trgt = URL(fileURLWithPath: app.deletingLastPathComponent().appendingPathComponent("\(name).app").path.appending(macho))
+            let src = URL(fileURLWithPath: installed.path.appending(macho))
+            if sh.isMachoEncrypted(exec: trgt){
+                sh.machodecrypt(src, target: trgt)
+                if sh.isMachoEncrypted(exec: trgt){
+                    throw PlayCoverError.cantDecryptIpa
+                }
+            }
+        }
     }
     
     private static func isMacho(fileUrl : URL) -> Bool {
